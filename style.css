@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Anek+Odia:wght@300&family=Barlow+Semi+Condensed:wght@100&family=Comfortaa:wght@300&family=Dosis:wght@300&family=Fredoka&family=Josefin+Sans:wght@100&family=K2D:ital,wght@1,500&family=Montserrat:wght@300;400&family=Nunito:wght@300&family=Open+Sans:wght@300&family=Overpass:wght@200&family=Radio+Canada:wght@300&family=Red+Hat+Display:wght@300&family=Roboto+Mono:wght@300&family=Roboto:ital,wght@0,300;1,300&family=Rubik+Moonrocks&family=Sansita+Swashed:wght@300&family=Shizuru&family=Square+Peg&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #212529;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.container{
+    margin: 8vh auto 0 auto;
+    max-width: 250px;
+    text-align: center;
+}
+
+.container > h1{
+    color: white;
+    margin-bottom: 3rem;
+    font-size: 30px;
+}
+
+.turn-return{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.turn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.3rem;
+    display: flex;
+    font-size: 13px;
+    background-color: #dd7373;
+    padding: .5rem;
+    border-radius: 10px;
+}
+
+.buttens{
+    display: grid;
+    gap: 12px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.butten{
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 4.5rem;
+    background-color: #363d44;
+    height: 4.5rem;
+    border-radius: 10px;
+    color: white;
+    transition: .2s ease-in;
+}
+
+.butten:hover{
+    background-color: #4e555c;
+}
+
+.butten.fill-x::after{
+    content: 'X';
+    color: #8a817c;
+}
+
+.butten.fill-o::after{
+    content: 'O';
+    color: #a3b18a;
+}
+
+#return{
+    cursor: pointer;
+    font-size: 13px;
+    padding: .5rem .9rem;
+    border-radius: 10px;
+    background-color: #3b3561;
+}
+
+#return:hover{
+    background-color: #524c7a;
+}
+
+.highlight-win{
+    background-color: #52796f !important;
+}
